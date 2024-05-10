@@ -35,6 +35,7 @@ parts:
       - libusb-1.0-0-dev
       - python3-dev
       - libcec-dev
+      - libfftw3-dev
       - libxcb-image0-dev
       - libxcb-util0-dev
       - libxcb-shm0-dev

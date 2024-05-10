@@ -25,9 +25,8 @@ elseif(CMAKE_HOST_UNIX AND NOT APPLE)
 	set(THREADS_PREFER_PTHREAD_FLAG ON)
 	find_package(ALSA REQUIRED)
 	find_package(Threads REQUIRED)
-	find_package(PkgConfig REQUIRED)
-	pkg_search_module(FFTW REQUIRED fftw3 IMPORTED_TARGET)
-	set(AUDIO_LIBS ${ALSA_LIBRARIES} Threads::Threads PkgConfig::FFTW)
+	find_package(FFTW3 REQUIRED)
+	set(AUDIO_LIBS ${ALSA_LIBRARIES} ${FFTW3_LIBRARIES} Threads::Threads)
 endif()
 
 target_link_libraries(audio-grabber
@@ -36,5 +35,5 @@ target_link_libraries(audio-grabber
 )
 
 if(CMAKE_HOST_UNIX AND NOT APPLE)
-	target_include_directories(audio-grabber PUBLIC ${ALSA_INCLUDE_DIRS})
+	target_include_directories(audio-grabber PUBLIC ${ALSA_INCLUDE_DIRS} ${FFTW3_INCLUDE_DIRS})
 endif()

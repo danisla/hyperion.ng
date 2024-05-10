@@ -80,7 +80,7 @@ sudo apt-get install libxrandr-dev libxrender-dev libxcb-image0-dev libxcb-util0
 **For Linux CEC support**
 
 ```console
-sudo apt-get install libcec-dev libp8-platform-dev libudev-dev
+sudo apt-get install libcec-dev libp8-platform-dev libudev-dev libfftw3-dev
 ```
 
 **on RPI you need the videocore IV headers**

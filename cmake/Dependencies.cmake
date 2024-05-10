@@ -141,6 +141,7 @@ macro(DeployLinux TARGET)
 			"libdbus"
 			"libdl"
 			"libexpat"
+			"libfftw3-3"
 			"libfontconfig"
 			"libgcc_s"
 			"libgcrypt"
