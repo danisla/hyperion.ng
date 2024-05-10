@@ -4,6 +4,11 @@
 #include <QObject>
 #include <QColor>
 #include <cmath>
+#include <fftw3.h>
+
+// TODO: Make these platform independent or get from settings
+#define SAMPLE_RATE 44100
+#define MAX_FRAMES_PER_BUFFER 2048
 
 // Hyperion-utils includes
 #include <utils/ColorRgb.h>
@@ -117,6 +122,11 @@ class AudioGrabber : public Grabber
 		/// 
 		QString _device;
 
+		///
+		/// Effect name
+		///
+		QString _audioEffect;
+
 		/// 
 		/// Hot Color
 		///
@@ -185,6 +195,26 @@ class AudioGrabber : public Grabber
 		/// true if the capturing session has started. 
 		///
 		bool _started;
+
+		///
+		/// FFT resolution
+		///
+		int _fft_resolution;
+
+		///
+		/// FFTW Plan
+		///
+		fftw_plan _fftw_plan;
+
+		///
+		/// FFTW Input buffer
+		///
+		fftw_complex * _fftw_in;
+
+		///
+		/// FFTW Output buffer
+		///
+		fftw_complex * _fftw_out;
 
 private:
 	///

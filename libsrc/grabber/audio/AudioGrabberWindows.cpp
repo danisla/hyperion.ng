@@ -60,7 +60,7 @@ bool AudioGrabberWindows::configureCaptureInterface()
 	}
 
 	// Define Audio Format & Create Buffer
-	WAVEFORMATEX audioFormat { WAVE_FORMAT_PCM, 1, 44100, 88200, 2, 16, 0 };
+	WAVEFORMATEX audioFormat { WAVE_FORMAT_PCM, 1, SAMPLE_RATE, 88200, 2, 16, 0 };
 	// wFormatTag, nChannels, nSamplesPerSec, mAvgBytesPerSec,
 	// nBlockAlign, wBitsPerSample, cbSize
 

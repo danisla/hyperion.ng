@@ -31,7 +31,7 @@ AudioGrabberLinux::AudioGrabberLinux()
 	: AudioGrabber()
 	, _isRunning{ false }
 	, _captureDevice {nullptr}
-	, _sampleRate(44100)
+	, _sampleRate(SAMPLE_RATE)
 {
 }
 

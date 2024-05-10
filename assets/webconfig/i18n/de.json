@@ -255,6 +255,7 @@
     "edt_conf_audio_device_expl": "Ausgewähltes Audio-Eingabegerät",
     "edt_conf_audio_device_title": "Audio-Eingabegerät",
     "edt_conf_audio_effect_enum_vumeter": "VU-Meter",
+    "edt_conf_audio_effect_enum_fft": "FFT",
     "edt_conf_audio_effect_hotcolor_expl": "Farbe die einen hohen Pegel anzeigt.",
     "edt_conf_audio_effect_hotcolor_title": "Farbe hoher Pegel",
     "edt_conf_audio_effect_multiplier_expl": "Multiplikator zur Verstärkung des Audiosignals.",

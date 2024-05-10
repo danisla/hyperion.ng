@@ -35,10 +35,13 @@
             "type": "string",
             "title": "edt_conf_audio_effects_title",
             "required": true,
-            "enum": [ "vuMeter" ],
+            "enum": [ "vuMeter", "fft" ],
             "default": "vuMeter",
             "options": {
-                "enum_titles": [ "edt_conf_audio_effect_enum_vumeter" ]
+                "enum_titles": [
+                    "edt_conf_audio_effect_enum_vumeter",
+                    "edt_conf_audio_effect_enum_fft"
+                ]
             },
             "propertyOrder": 4
         },
@@ -143,6 +146,50 @@
                     "required": true,
                     "propertyOrder": 7,
                     "comment": "Safe percentage is the percentage used to determine the maximum percentage of the audio safe level"
+                }
+            }
+        },
+        "fft": {
+            "type": "object",
+            "title": "",
+            "required": true,
+            "propertyOrder": 6,
+            "options": {
+                "dependencies": {
+                    "audioEffect": "fft"
+                }
+            },
+            "properties": {
+                "multiplier": {
+                    "type": "number",
+                    "title": "edt_conf_audio_effect_multiplier_title",
+                    "default": 0,
+                    "minimum": 0,
+                    "step": 0.01,
+                    "required": true,
+                    "propertyOrder": 1,
+                    "comment": "The multiplier is used to scale the audio input signal. Increase or decrease to achieve the desired effect. Set to 0 for auto"
+                },
+                "tolerance": {
+                    "type": "number",
+                    "title": "edt_conf_audio_effect_tolerance_title",
+                    "default": 5,
+                    "minimum": 0,
+                    "step": 1,
+                    "append": "edt_append_percent",
+                    "required": true,
+                    "propertyOrder": 2,
+                    "comment": "The tolerance is a percentage value from 0 - 100 used during auto multiplier calculation."
+                },
+                "resolution": {
+                    "type": "number",
+                    "title": "edt_conf_audio_effect_resolution_title",
+                    "default": 50,
+                    "minimum": 1,
+                    "step": 1,
+                    "required": true,
+                    "propertyOrder": 3,
+                    "comment": "Resolution of FFT spectrum"
                 }
             }
         }

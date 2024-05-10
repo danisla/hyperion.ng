@@ -238,6 +238,7 @@
     "edt_conf_audio_device_expl": "选择音频输入设备",
     "edt_conf_audio_device_title": "音频设备",
     "edt_conf_audio_effect_enum_vumeter": "音量单位计",
+    "edt_conf_audio_effect_enum_fft": "FFT",
     "edt_conf_audio_effect_hotcolor_expl": "暖色",
     "edt_conf_audio_effect_hotcolor_title": "暖色",
     "edt_conf_audio_effect_multiplier_expl": "音频信号值增益",

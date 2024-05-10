@@ -239,6 +239,7 @@
     "edt_conf_audio_device_expl": "Appareil d'entrée audio sélectionné",
     "edt_conf_audio_device_title": "Périphérique audio",
     "edt_conf_audio_effect_enum_vumeter": "VU-Mètre",
+    "edt_conf_audio_effect_enum_fft": "FFT",
     "edt_conf_audio_effect_hotcolor_expl": "Couleur chaude",
     "edt_conf_audio_effect_hotcolor_title": "Couleur chaude",
     "edt_conf_audio_effect_multiplier_expl": "Multiplicateur de la valeur du signal audio",

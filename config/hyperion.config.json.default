@@ -120,6 +120,17 @@
 			"tolerance": 5,
 			"warnColor": [ 255, 255, 0 ],
 			"warnValue": 80
+		},
+		"fft": {
+			"flip": "NO_CHANGE",
+			"hotColor": [ 255, 0, 0 ],
+			"multiplier": 20,
+			"safeColor": [ 0, 255, 0 ],
+			"safeValue": 45,
+			"tolerance": 5,
+			"warnColor": [ 255, 255, 0 ],
+			"warnValue": 80,
+			"resolution": 50
 		}
 	},
 

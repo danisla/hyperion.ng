@@ -255,6 +255,7 @@
     "edt_conf_audio_device_expl": "Vald ljudingångsenhet",
     "edt_conf_audio_device_title": "Ljudenhet",
     "edt_conf_audio_effect_enum_vumeter": "VU-Mätare",
+    "edt_conf_audio_effect_enum_fft": "FFT",
     "edt_conf_audio_effect_hotcolor_expl": "Varm Färg",
     "edt_conf_audio_effect_hotcolor_title": "Varm Färg",
     "edt_conf_audio_effect_multiplier_expl": "Multiplikator för ljudsignalvärde",

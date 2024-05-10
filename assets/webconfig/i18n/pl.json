@@ -238,6 +238,7 @@
     "edt_conf_audio_device_expl": "Wybrane urządzenie wejściowe audio",
     "edt_conf_audio_device_title": "Urządzenie audio",
     "edt_conf_audio_effect_enum_vumeter": "Miernik VU",
+    "edt_conf_audio_effect_enum_fft": "FFT",
     "edt_conf_audio_effect_hotcolor_expl": "Gorący kolor",
     "edt_conf_audio_effect_hotcolor_title": "Gorący kolor",
     "edt_conf_audio_effect_multiplier_expl": "Mnożnik wartości sygnału audio",
